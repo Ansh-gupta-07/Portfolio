@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ansh Gupta — Creative Developer</title>
+  <meta name="description" content="Ansh Gupta — Full Stack Developer crafting immersive digital experiences with clean code and bold design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Grain overlay -->
+  <div class="grain"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <a href="#hero" class="nav-name" data-magnetic>AG</a>
+      <span class="nav-full-name">Ansh Gupta</span>
+    </div>
+    <div class="nav-links">
+      <a href="#work" class="nav-link" data-magnetic>Work</a>
+      <a href="#about" class="nav-link" data-magnetic>About</a>
+      <a href="#contact" class="nav-link" data-magnetic>Contact</a>
+    </div>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span>Available for work</span>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="hero">
+
+    <!-- Big background text -->
+    <div class="hero-bg-text" aria-hidden="true">
+      <span class="hero-bg-word">DEVELOPER</span>
+    </div>
+
+    <!-- Portrait with parallax -->
+    <div class="hero-portrait-wrap" id="heroPortrait">
+      <div class="hero-portrait-inner">
+        <img src="portrait.png" alt="Ansh Gupta" class="hero-portrait-img" />
+        <div class="hero-portrait-gradient"></div>
+      </div>
+      <!-- Floating label on portrait -->
+      <div class="hero-portrait-tag">
+        <span>Creative Dev</span>
+        <span class="hero-portrait-tag-year">©2025</span>
+      </div>
+    </div>
+
+    <!-- Hero text left -->
+    <div class="hero-text-left">
+      <p class="hero-eyebrow">
+        <span class="hero-eyebrow-line"></span>
+        Full Stack Developer
+      </p>
+      <h1 class="hero-h1">
+        <span class="hero-word split-text" data-split>ANSH</span>
+        <span class="hero-word split-text italic" data-split>GUPTA</span>
+      </h1>
+    </div>
+
+    <!-- Hero text right -->
+    <div class="hero-text-right">
+      <p class="hero-desc">
+        Crafting immersive<br/>digital experiences<br/>through code & design.
+      </p>
+      <div class="hero-cta-wrap">
+        <a href="#work" class="btn btn-dark" id="heroBtn" data-magnetic>
+          <span>View Work</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="hero-bottom">
+      <a href="https://github.com/Ansh-gupta-07" target="_blank" class="hero-social" aria-label="GitHub">GitHub</a>
+      <a href="https://www.linkedin.com/in/ansh-gupta-406381294/" target="_blank" class="hero-social" aria-label="LinkedIn">LinkedIn</a>
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MARQUEE ═══════════════════ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>React</span><span class="marquee-sep">✦</span>
+        <span>Node.js</span><span class="marquee-sep">✦</span>
+        <span>TypeScript</span><span class="marquee-sep">✦</span>
+        <span>Python</span><span class="marquee-sep">✦</span>
+        <span>MongoDB</span><span class="marquee-sep">✦</span>
+        <span>Tailwind CSS</span><span class="marquee-sep">✦</span>
+        <span>PostgreSQL</span><span class="marquee-sep">✦</span>
+        <span>Next.js</span><span class="marquee-sep">✦</span>
+        <span>Express</span><span class="marquee-sep">✦</span>
+        <span>Three.js</span><span class="marquee-sep">✦</span>
+        <span>GSAP</span><span class="marquee-sep">✦</span>
+        <span>Docker</span><span class="marquee-sep">✦</span>
+        <!-- duplicate for seamless loop -->
+        <span>React</span><span class="marquee-sep">✦</span>
+        <span>Node.js</span><span class="marquee-sep">✦</span>
+        <span>TypeScript</span><span class="marquee-sep">✦</span>
+        <span>Python</span><span class="marquee-sep">✦</span>
+        <span>MongoDB</span><span class="marquee-sep">✦</span>
+        <span>Tailwind CSS</span><span class="marquee-sep">✦</span>
+        <span>PostgreSQL</span><span class="marquee-sep">✦</span>
+        <span>Next.js</span><span class="marquee-sep">✦</span>
+        <span>Express</span><span class="marquee-sep">✦</span>
+        <span>Three.js</span><span class="marquee-sep">✦</span>
+        <span>GSAP</span><span class="marquee-sep">✦</span>
+        <span>Docker</span><span class="marquee-sep">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ WORK ═══════════════════ -->
+  <section class="section work-section" id="work">
+    <div class="section-label">
+      <span class="section-number">01</span>
+      <span>Selected Work</span>
+    </div>
+    <div class="section-header">
+      <h2 class="section-h2">
+        <span class="reveal-text" data-reveal>Projects</span>
+        <span class="reveal-text italic" data-reveal>that ship.</span>
+      </h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="project-card" id="proj1" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-card-img-wrap">
+            <div class="project-card-img project-img-1"></div>
+            <div class="project-card-overlay">
+              <a href="#" class="project-link-btn" aria-label="View project">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-num">01</span>
+            <div>
+              <h3 class="project-title">CureBay</h3>
+              <p class="project-desc">AI-powered healthcare platform connecting rural patients with specialists via telemedicine.</p>
+              <div class="project-tags">
+                <span>React</span><span>Node.js</span><span>MongoDB</span><span>AI/ML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card" id="proj2" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-card-img-wrap">
+            <div class="project-card-img project-img-2"></div>
+            <div class="project-card-overlay">
+              <a href="#" class="project-link-btn" aria-label="View project">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-num">02</span>
+            <div>
+              <h3 class="project-title">DevSync</h3>
+              <p class="project-desc">Real-time collaborative development environment with live code sharing and team tools.</p>
+              <div class="project-tags">
+                <span>React</span><span>WebSockets</span><span>TypeScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card" id="proj3" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-card-img-wrap">
+            <div class="project-card-img project-img-3"></div>
+            <div class="project-card-overlay">
+              <a href="#" class="project-link-btn" aria-label="View project">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-num">03</span>
+            <div>
+              <h3 class="project-title">GIS Disaster</h3>
+              <p class="project-desc">GIS-powered disaster damage analysis platform for floods, fires and earthquakes mapping.</p>
+              <div class="project-tags">
+                <span>React</span><span>Leaflet.js</span><span>Python</span><span>GIS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card" id="proj4" data-tilt>
+        <div class="project-card-inner">
+          <div class="project-card-img-wrap">
+            <div class="project-card-img project-img-4"></div>
+            <div class="project-card-overlay">
+              <a href="#" class="project-link-btn" aria-label="View project">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-num">04</span>
+            <div>
+              <h3 class="project-title">Edge AI ASHA</h3>
+              <p class="project-desc">Offline-first AI triage tool for ASHA workers enabling medical diagnosis in rural areas.</p>
+              <div class="project-tags">
+                <span>React</span><span>TensorFlow.js</span><span>PWA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section class="section about-section" id="about">
+    <div class="section-label">
+      <span class="section-number">02</span>
+      <span>About Me</span>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="section-h2">
+          <span class="reveal-text" data-reveal>Solving hard</span>
+          <span class="reveal-text italic" data-reveal>problems with</span>
+          <span class="reveal-text" data-reveal>elegant code.</span>
+        </h2>
+      </div>
+
+      <div class="about-right">
+        <div class="about-portrait-wrap" id="aboutPortrait">
+          <img src="portrait.png" alt="Ansh Gupta" class="about-portrait" />
+          <div class="about-portrait-badge">
+            <span class="badge-line">Based in</span>
+            <span class="badge-val">India 🇮🇳</span>
+          </div>
+        </div>
+
+        <div class="about-bio">
+          <p>
+            I'm <strong>Ansh Gupta</strong>, a full-stack developer with a passion for building products that sit at the intersection of technology and human experience.
+          </p>
+          <p>
+            From AI-powered healthcare platforms to real-time collaborative tools, I turn complex problems into clean, scalable, and beautiful solutions.
+          </p>
+          <p>
+            Currently open to <strong>freelance</strong> and <strong>full-time opportunities</strong> — let's build something remarkable together.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num counter" data-target="4">0</span>
+            <span class="stat-label">Projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="2">0</span>
+            <span class="stat-label">Years building</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="12">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SKILLS STRIP ═══════════════════ -->
+  <section class="skills-section">
+    <div class="skills-grid">
+      <div class="skill-block">
+        <div class="skill-icon">⚡</div>
+        <h4>Frontend</h4>
+        <p>React, Next.js, TypeScript, Three.js, GSAP, Tailwind</p>
+      </div>
+      <div class="skill-block">
+        <div class="skill-icon">🛠</div>
+        <h4>Backend</h4>
+        <p>Node.js, Express, Python, FastAPI, PostgreSQL, MongoDB</p>
+      </div>
+      <div class="skill-block">
+        <div class="skill-icon">🤖</div>
+        <h4>AI / ML</h4>
+        <p>TensorFlow.js, Scikit-learn, OpenAI API, Edge inference</p>
+      </div>
+      <div class="skill-block">
+        <div class="skill-icon">☁️</div>
+        <h4>DevOps</h4>
+        <p>Docker, GitHub Actions, Vercel, AWS, CI/CD pipelines</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ═══════════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="section-label">
+      <span class="section-number">03</span>
+      <span>Get In Touch</span>
+    </div>
+
+    <div class="contact-inner">
+      <h2 class="contact-h2">
+        <span class="reveal-text" data-reveal>Let's build</span>
+        <span class="reveal-text italic" data-reveal>something</span>
+        <span class="reveal-text" data-reveal>great.</span>
+      </h2>
+
+      <div class="contact-body">
+        <p class="contact-desc">
+          Whether you have a project in mind, a role to fill, or just want to say hello — my inbox is always open.
+        </p>
+        <a href="mailto:anshgupta3117@gmail.com" class="contact-email-link" data-magnetic>
+          anshgupta3117@gmail.com
+          <span class="email-underline"></span>
+        </a>
+        <div class="contact-socials">
+          <a href="https://github.com/Ansh-gupta-07" target="_blank" class="social-link" data-magnetic aria-label="GitHub">
+            <span>GitHub</span>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ansh-gupta-406381294/" target="_blank" class="social-link" data-magnetic aria-label="LinkedIn">
+            <span>LinkedIn</span>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://www.instagram.com/ANSH_GUPTA_17_08/" target="_blank" class="social-link" data-magnetic aria-label="Instagram">
+            <span>Instagram</span>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span>© 2025 Ansh Gupta</span>
+    </div>
+    <div class="footer-center">
+      <span class="footer-logo">AG</span>
+    </div>
+    <div class="footer-right">
+      <span>Designed & Built from scratch</span>
+    </div>
+  </footer>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
