@@ -9,374 +9,621 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
-  <!-- Grain overlay -->
-  <div class="grain"></div>
-
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
-
-  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
-  <nav class="nav" id="nav">
-    <div class="nav-logo">
-      <a href="#hero" class="nav-name" data-magnetic>AG</a>
-      <span class="nav-full-name">Ansh Gupta</span>
-    </div>
-    <div class="nav-links">
-      <a href="#work" class="nav-link" data-magnetic>Work</a>
-      <a href="#about" class="nav-link" data-magnetic>About</a>
-      <a href="#contact" class="nav-link" data-magnetic>Contact</a>
-    </div>
-    <div class="nav-status">
-      <span class="status-dot"></span>
-      <span>Available for work</span>
-    </div>
-  </nav>
-
-  <!-- ═══════════════════ HERO ═══════════════════ -->
-  <section class="hero" id="hero">
-
-    <!-- Big background text -->
-    <div class="hero-bg-text" aria-hidden="true">
-      <span class="hero-bg-word">DEVELOPER</span>
-    </div>
-
-    <!-- Portrait with parallax -->
-    <div class="hero-portrait-wrap" id="heroPortrait">
-      <div class="hero-portrait-inner">
-        <img src="portrait.png" alt="Ansh Gupta" class="hero-portrait-img" />
-        <div class="hero-portrait-gradient"></div>
-      </div>
-      <!-- Floating label on portrait -->
-      <div class="hero-portrait-tag">
-        <span>Creative Dev</span>
-        <span class="hero-portrait-tag-year">©2025</span>
-      </div>
-    </div>
-
-    <!-- Hero text left -->
-    <div class="hero-text-left">
-      <p class="hero-eyebrow">
-        <span class="hero-eyebrow-line"></span>
-        Full Stack Developer
-      </p>
-      <h1 class="hero-h1">
-        <span class="hero-word split-text" data-split>ANSH</span>
-        <span class="hero-word split-text italic" data-split>GUPTA</span>
-      </h1>
-    </div>
-
-    <!-- Hero text right -->
-    <div class="hero-text-right">
-      <p class="hero-desc">
-        Crafting immersive<br/>digital experiences<br/>through code & design.
-      </p>
-      <div class="hero-cta-wrap">
-        <a href="#work" class="btn btn-dark" id="heroBtn" data-magnetic>
-          <span>View Work</span>
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Bottom bar -->
-    <div class="hero-bottom">
-      <a href="https://github.com/Ansh-gupta-07" target="_blank" class="hero-social" aria-label="GitHub">GitHub</a>
-      <a href="https://www.linkedin.com/in/ansh-gupta-406381294/" target="_blank" class="hero-social" aria-label="LinkedIn">LinkedIn</a>
-      <div class="hero-scroll-hint">
-        <div class="scroll-line"></div>
-        <span>Scroll</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ MARQUEE ═══════════════════ -->
-  <div class="marquee-section" aria-hidden="true">
-    <div class="marquee-track">
-      <div class="marquee-inner">
-        <span>React</span><span class="marquee-sep">✦</span>
-        <span>Node.js</span><span class="marquee-sep">✦</span>
-        <span>TypeScript</span><span class="marquee-sep">✦</span>
-        <span>Python</span><span class="marquee-sep">✦</span>
-        <span>MongoDB</span><span class="marquee-sep">✦</span>
-        <span>Tailwind CSS</span><span class="marquee-sep">✦</span>
-        <span>PostgreSQL</span><span class="marquee-sep">✦</span>
-        <span>Next.js</span><span class="marquee-sep">✦</span>
-        <span>Express</span><span class="marquee-sep">✦</span>
-        <span>Three.js</span><span class="marquee-sep">✦</span>
-        <span>GSAP</span><span class="marquee-sep">✦</span>
-        <span>Docker</span><span class="marquee-sep">✦</span>
-        <!-- duplicate for seamless loop -->
-        <span>React</span><span class="marquee-sep">✦</span>
-        <span>Node.js</span><span class="marquee-sep">✦</span>
-        <span>TypeScript</span><span class="marquee-sep">✦</span>
-        <span>Python</span><span class="marquee-sep">✦</span>
-        <span>MongoDB</span><span class="marquee-sep">✦</span>
-        <span>Tailwind CSS</span><span class="marquee-sep">✦</span>
-        <span>PostgreSQL</span><span class="marquee-sep">✦</span>
-        <span>Next.js</span><span class="marquee-sep">✦</span>
-        <span>Express</span><span class="marquee-sep">✦</span>
-        <span>Three.js</span><span class="marquee-sep">✦</span>
-        <span>GSAP</span><span class="marquee-sep">✦</span>
-        <span>Docker</span><span class="marquee-sep">✦</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════ WORK ═══════════════════ -->
-  <section class="section work-section" id="work">
-    <div class="section-label">
-      <span class="section-number">01</span>
-      <span>Selected Work</span>
-    </div>
-    <div class="section-header">
-      <h2 class="section-h2">
-        <span class="reveal-text" data-reveal>Projects</span>
-        <span class="reveal-text italic" data-reveal>that ship.</span>
-      </h2>
-    </div>
-
-    <div class="projects-grid">
-
-      <!-- Project 1 -->
-      <article class="project-card" id="proj1" data-tilt>
-        <div class="project-card-inner">
-          <div class="project-card-img-wrap">
-            <div class="project-card-img project-img-1"></div>
-            <div class="project-card-overlay">
-              <a href="#" class="project-link-btn" aria-label="View project">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-info">
-            <span class="project-num">01</span>
-            <div>
-              <h3 class="project-title">CureBay</h3>
-              <p class="project-desc">AI-powered healthcare platform connecting rural patients with specialists via telemedicine.</p>
-              <div class="project-tags">
-                <span>React</span><span>Node.js</span><span>MongoDB</span><span>AI/ML</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 2 -->
-      <article class="project-card" id="proj2" data-tilt>
-        <div class="project-card-inner">
-          <div class="project-card-img-wrap">
-            <div class="project-card-img project-img-2"></div>
-            <div class="project-card-overlay">
-              <a href="#" class="project-link-btn" aria-label="View project">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-info">
-            <span class="project-num">02</span>
-            <div>
-              <h3 class="project-title">DevSync</h3>
-              <p class="project-desc">Real-time collaborative development environment with live code sharing and team tools.</p>
-              <div class="project-tags">
-                <span>React</span><span>WebSockets</span><span>TypeScript</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 3 -->
-      <article class="project-card" id="proj3" data-tilt>
-        <div class="project-card-inner">
-          <div class="project-card-img-wrap">
-            <div class="project-card-img project-img-3"></div>
-            <div class="project-card-overlay">
-              <a href="#" class="project-link-btn" aria-label="View project">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-info">
-            <span class="project-num">03</span>
-            <div>
-              <h3 class="project-title">GIS Disaster</h3>
-              <p class="project-desc">GIS-powered disaster damage analysis platform for floods, fires and earthquakes mapping.</p>
-              <div class="project-tags">
-                <span>React</span><span>Leaflet.js</span><span>Python</span><span>GIS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 4 -->
-      <article class="project-card" id="proj4" data-tilt>
-        <div class="project-card-inner">
-          <div class="project-card-img-wrap">
-            <div class="project-card-img project-img-4"></div>
-            <div class="project-card-overlay">
-              <a href="#" class="project-link-btn" aria-label="View project">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-info">
-            <span class="project-num">04</span>
-            <div>
-              <h3 class="project-title">Edge AI ASHA</h3>
-              <p class="project-desc">Offline-first AI triage tool for ASHA workers enabling medical diagnosis in rural areas.</p>
-              <div class="project-tags">
-                <span>React</span><span>TensorFlow.js</span><span>PWA</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════ ABOUT ═══════════════════ -->
-  <section class="section about-section" id="about">
-    <div class="section-label">
-      <span class="section-number">02</span>
-      <span>About Me</span>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-left">
-        <h2 class="section-h2">
-          <span class="reveal-text" data-reveal>Solving hard</span>
-          <span class="reveal-text italic" data-reveal>problems with</span>
-          <span class="reveal-text" data-reveal>elegant code.</span>
-        </h2>
-      </div>
-
-      <div class="about-right">
-        <div class="about-portrait-wrap" id="aboutPortrait">
-          <img src="portrait.png" alt="Ansh Gupta" class="about-portrait" />
-          <div class="about-portrait-badge">
-            <span class="badge-line">Based in</span>
-            <span class="badge-val">India 🇮🇳</span>
-          </div>
-        </div>
-
-        <div class="about-bio">
-          <p>
-            I'm <strong>Ansh Gupta</strong>, a full-stack developer with a passion for building products that sit at the intersection of technology and human experience.
-          </p>
-          <p>
-            From AI-powered healthcare platforms to real-time collaborative tools, I turn complex problems into clean, scalable, and beautiful solutions.
-          </p>
-          <p>
-            Currently open to <strong>freelance</strong> and <strong>full-time opportunities</strong> — let's build something remarkable together.
-          </p>
-        </div>
-
-        <div class="about-stats">
-          <div class="stat">
-            <span class="stat-num counter" data-target="4">0</span>
-            <span class="stat-label">Projects shipped</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num counter" data-target="2">0</span>
-            <span class="stat-label">Years building</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num counter" data-target="12">0</span>
-            <span class="stat-label">Technologies</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ SKILLS STRIP ═══════════════════ -->
-  <section class="skills-section">
-    <div class="skills-grid">
-      <div class="skill-block">
-        <div class="skill-icon">⚡</div>
-        <h4>Frontend</h4>
-        <p>React, Next.js, TypeScript, Three.js, GSAP, Tailwind</p>
-      </div>
-      <div class="skill-block">
-        <div class="skill-icon">🛠</div>
-        <h4>Backend</h4>
-        <p>Node.js, Express, Python, FastAPI, PostgreSQL, MongoDB</p>
-      </div>
-      <div class="skill-block">
-        <div class="skill-icon">🤖</div>
-        <h4>AI / ML</h4>
-        <p>TensorFlow.js, Scikit-learn, OpenAI API, Edge inference</p>
-      </div>
-      <div class="skill-block">
-        <div class="skill-icon">☁️</div>
-        <h4>DevOps</h4>
-        <p>Docker, GitHub Actions, Vercel, AWS, CI/CD pipelines</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ CONTACT ═══════════════════ -->
-  <section class="section contact-section" id="contact">
-    <div class="section-label">
-      <span class="section-number">03</span>
-      <span>Get In Touch</span>
-    </div>
-
-    <div class="contact-inner">
-      <h2 class="contact-h2">
-        <span class="reveal-text" data-reveal>Let's build</span>
-        <span class="reveal-text italic" data-reveal>something</span>
-        <span class="reveal-text" data-reveal>great.</span>
-      </h2>
-
-      <div class="contact-body">
-        <p class="contact-desc">
-          Whether you have a project in mind, a role to fill, or just want to say hello — my inbox is always open.
-        </p>
-        <a href="mailto:anshgupta3117@gmail.com" class="contact-email-link" data-magnetic>
-          anshgupta3117@gmail.com
-          <span class="email-underline"></span>
-        </a>
-        <div class="contact-socials">
-          <a href="https://github.com/Ansh-gupta-07" target="_blank" class="social-link" data-magnetic aria-label="GitHub">
-            <span>GitHub</span>
-            <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/ansh-gupta-406381294/" target="_blank" class="social-link" data-magnetic aria-label="LinkedIn">
-            <span>LinkedIn</span>
-            <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="https://www.instagram.com/ANSH_GUPTA_17_08/" target="_blank" class="social-link" data-magnetic aria-label="Instagram">
-            <span>Instagram</span>
-            <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ FOOTER ═══════════════════ -->
-  <footer class="footer">
-    <div class="footer-left">
-      <span>© 2025 Ansh Gupta</span>
-    </div>
-    <div class="footer-center">
-      <span class="footer-logo">AG</span>
-    </div>
-    <div class="footer-right">
-      <span>Designed & Built from scratch</span>
-    </div>
-  </footer>
-
-  <!-- GSAP CDN -->
+  <!-- React + Babel via CDN (no build step needed) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+  <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useEffect, useRef, useState } = React;
+
+    // ─────────────────────────────────────────────
+    // DATA
+    // ─────────────────────────────────────────────
+    const PROJECTS = [
+      {
+        id: "01",
+        title: "CureBay",
+        desc: "AI-powered healthcare platform connecting rural patients with specialists via telemedicine.",
+        tags: ["React", "Node.js", "MongoDB", "AI/ML"],
+        color: "#1a3a2f",
+        glow: "rgba(74,222,128,0.2)",
+        label: "CUREBAY",
+        link: "https://github.com/Ansh-gupta-07",
+      },
+      {
+        id: "02",
+        title: "DevSync",
+        desc: "Real-time collaborative development environment with live code sharing and team tools.",
+        tags: ["React", "WebSockets", "TypeScript"],
+        color: "#1a2a3f",
+        glow: "rgba(96,165,250,0.2)",
+        label: "DEVSYNC",
+        link: "https://github.com/Ansh-gupta-07",
+      },
+      {
+        id: "03",
+        title: "GIS Disaster",
+        desc: "GIS-powered disaster damage analysis platform for floods, fires and earthquakes mapping.",
+        tags: ["React", "Leaflet.js", "Python", "GIS"],
+        color: "#2a1a1a",
+        glow: "rgba(251,146,60,0.2)",
+        label: "GIS DISASTER",
+        link: "https://github.com/Ansh-gupta-07",
+      },
+      {
+        id: "04",
+        title: "Edge AI ASHA",
+        desc: "Offline-first AI triage tool for ASHA workers enabling medical diagnosis in rural areas.",
+        tags: ["React", "TensorFlow.js", "PWA"],
+        color: "#1f1a2e",
+        glow: "rgba(167,139,250,0.2)",
+        label: "EDGE AI",
+        link: "https://github.com/Ansh-gupta-07",
+      },
+    ];
+
+    const SKILLS = [
+      { icon: "⚡", title: "Frontend", desc: "React, Next.js, TypeScript, Three.js, GSAP, Tailwind" },
+      { icon: "🛠", title: "Backend", desc: "Node.js, Express, Python, FastAPI, PostgreSQL, MongoDB" },
+      { icon: "🤖", title: "AI / ML", desc: "TensorFlow.js, Scikit-learn, OpenAI API, Edge inference" },
+      { icon: "☁️", title: "DevOps", desc: "Docker, GitHub Actions, Vercel, AWS, CI/CD pipelines" },
+    ];
+
+    const TECH = ["React","Node.js","TypeScript","Python","MongoDB","Tailwind CSS","PostgreSQL","Next.js","Express","Three.js","GSAP","Docker"];
+
+    const SOCIALS = [
+      { label: "GitHub",    href: "https://github.com/Ansh-gupta-07" },
+      { label: "LinkedIn",  href: "https://www.linkedin.com/in/ansh-gupta-406381294/" },
+      { label: "Instagram", href: "https://www.instagram.com/ANSH_GUPTA_17_08/" },
+    ];
+
+    // ─────────────────────────────────────────────
+    // CURSOR
+    // ─────────────────────────────────────────────
+    const Cursor = () => {
+      const dotRef    = useRef(null);
+      const ringRef   = useRef(null);
+      const mouse     = useRef({ x: 0, y: 0 });
+      const follower  = useRef({ x: 0, y: 0 });
+      const rafId     = useRef(null);
+
+      useEffect(() => {
+        const dot  = dotRef.current;
+        const ring = ringRef.current;
+        if (!dot || !ring) return;
+
+        const onMove = (e) => {
+          mouse.current.x = e.clientX;
+          mouse.current.y = e.clientY;
+          gsap.set(dot, { x: e.clientX, y: e.clientY });
+        };
+
+        const animate = () => {
+          follower.current.x += (mouse.current.x - follower.current.x) * 0.12;
+          follower.current.y += (mouse.current.y - follower.current.y) * 0.12;
+          gsap.set(ring, { x: follower.current.x, y: follower.current.y });
+          rafId.current = requestAnimationFrame(animate);
+        };
+
+        document.addEventListener("mousemove", onMove);
+        rafId.current = requestAnimationFrame(animate);
+
+        const hoverIn  = () => { gsap.to(dot,  { scale: 2.5, duration: 0.3, ease: "back.out" }); gsap.to(ring, { scale: 1.5, opacity: 0.6, duration: 0.3 }); };
+        const hoverOut = () => { gsap.to(dot,  { scale: 1,   duration: 0.3 }); gsap.to(ring, { scale: 1,   opacity: 1,   duration: 0.3 }); };
+
+        document.querySelectorAll("a, button, [data-magnetic]").forEach(el => {
+          el.addEventListener("mouseenter", hoverIn);
+          el.addEventListener("mouseleave", hoverOut);
+        });
+
+        return () => {
+          document.removeEventListener("mousemove", onMove);
+          cancelAnimationFrame(rafId.current);
+        };
+      }, []);
+
+      return (
+        <>
+          <div className="cursor"          ref={dotRef}  />
+          <div className="cursor-follower" ref={ringRef} />
+        </>
+      );
+    };
+
+    // ─────────────────────────────────────────────
+    // NAV
+    // ─────────────────────────────────────────────
+    const Nav = () => {
+      const navRef = useRef(null);
+
+      useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        const nav = navRef.current;
+        if (!nav) return;
+        ScrollTrigger.create({
+          start: "top -60",
+          onEnter:     () => nav.classList.add("scrolled"),
+          onLeaveBack: () => nav.classList.remove("scrolled"),
+        });
+      }, []);
+
+      return (
+        <nav className="nav" ref={navRef} id="nav">
+          <div className="nav-logo">
+            <a href="#hero" className="nav-name" data-magnetic>AG</a>
+            <span className="nav-full-name">Ansh Gupta</span>
+          </div>
+          <div className="nav-links">
+            {["Work","About","Contact"].map(l => (
+              <a key={l} href={`#${l.toLowerCase()}`} className="nav-link" data-magnetic>{l}</a>
+            ))}
+          </div>
+          <div className="nav-status">
+            <span className="status-dot" />
+            <span>Available for work</span>
+          </div>
+        </nav>
+      );
+    };
+
+    // ─────────────────────────────────────────────
+    // HERO
+    // ─────────────────────────────────────────────
+    const Hero = () => {
+      const sectionRef  = useRef(null);
+      const portraitRef = useRef(null);
+      const innerRef    = useRef(null);
+
+      useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        const ctx = gsap.context(() => {
+          // Entrance
+          const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
+          gsap.set(".hero-word",     { y: 80,  opacity: 0 });
+          gsap.set(".hero-desc",     { y: 20,  opacity: 0 });
+          gsap.set(".hero-cta-wrap", { y: 20,  opacity: 0 });
+          gsap.set(".hero-portrait-wrap", { y: 30, opacity: 0 });
+          gsap.set(".hero-eyebrow",  { opacity: 0 });
+          gsap.set(".hero-bottom",   { opacity: 0 });
+
+          tl.to(".hero-portrait-wrap", { opacity: 1, y: 0, duration: 1.4, delay: 0.2 })
+            .to(".hero-word",          { opacity: 1, y: 0, duration: 1,   stagger: 0.12 }, "-=1.0")
+            .to(".hero-eyebrow",       { opacity: 1, duration: 0.8 }, "-=0.7")
+            .to(".hero-desc",          { opacity: 1, y: 0, duration: 0.8 }, "-=0.7")
+            .to(".hero-cta-wrap",      { opacity: 1, y: 0, duration: 0.6 }, "-=0.5")
+            .to(".hero-bottom",        { opacity: 1, duration: 0.8 }, "-=0.4");
+
+          // BG word parallax
+          gsap.to(".hero-bg-word", {
+            y: -160, ease: "none",
+            scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 1.5 },
+          });
+
+          // Portrait parallax (scroll)
+          gsap.to(".hero-portrait-wrap", {
+            y: 80, ease: "none",
+            scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 2 },
+          });
+        }, sectionRef);
+
+        // Mouse parallax on portrait
+        const handleMouse = (e) => {
+          const inner = innerRef.current;
+          if (!inner) return;
+          const xP = (e.clientX / window.innerWidth  - 0.5) * 2;
+          const yP = (e.clientY / window.innerHeight - 0.5) * 2;
+          gsap.to(inner, { rotateY: xP * 8, rotateX: -yP * 5, duration: 0.6, ease: "power2.out", transformPerspective: 800 });
+        };
+        document.addEventListener("mousemove", handleMouse);
+
+        return () => {
+          ctx.revert();
+          document.removeEventListener("mousemove", handleMouse);
+        };
+      }, []);
+
+      return (
+        <section className="hero" id="hero" ref={sectionRef}>
+          <div className="hero-bg-text" aria-hidden="true">
+            <span className="hero-bg-word">DEVELOPER</span>
+          </div>
+
+          <div className="hero-portrait-wrap" ref={portraitRef}>
+            <div className="hero-portrait-inner" ref={innerRef}>
+              <img src="portrait.png" alt="Ansh Gupta" className="hero-portrait-img" />
+              <div className="hero-portrait-gradient" />
+            </div>
+            <div className="hero-portrait-tag">
+              <span>Creative Dev</span>
+              <span className="hero-portrait-tag-year">©2025</span>
+            </div>
+          </div>
+
+          <div className="hero-text-left">
+            <p className="hero-eyebrow">
+              <span className="hero-eyebrow-line" />
+              Full Stack Developer
+            </p>
+            <h1 className="hero-h1">
+              <span className="hero-word">ANSH</span>
+              <span className="hero-word italic">GUPTA</span>
+            </h1>
+          </div>
+
+          <div className="hero-text-right">
+            <p className="hero-desc">
+              Crafting immersive<br/>digital experiences<br/>through code &amp; design.
+            </p>
+            <div className="hero-cta-wrap">
+              <a href="#work" className="btn btn-dark" data-magnetic>
+                <span>View Work</span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div className="hero-bottom">
+            {SOCIALS.slice(0,2).map(s => (
+              <a key={s.label} href={s.href} target="_blank" className="hero-social" rel="noreferrer">{s.label}</a>
+            ))}
+            <div className="hero-scroll-hint">
+              <div className="scroll-line" />
+              <span>Scroll</span>
+            </div>
+          </div>
+        </section>
+      );
+    };
+
+    // ─────────────────────────────────────────────
+    // MARQUEE
+    // ─────────────────────────────────────────────
+    const MarqueeStrip = () => {
+      const items = [...TECH, ...TECH];
+      return (
+        <div className="marquee-section" aria-hidden="true">
+          <div className="marquee-track">
+            <div className="marquee-inner">
+              {items.map((t, i) => (
+                <React.Fragment key={i}>
+                  <span>{t}</span>
+                  <span className="marquee-sep">✦</span>
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    // ─────────────────────────────────────────────
+    // PROJECT CARD
+    // ─────────────────────────────────────────────
+    const ProjectCard = ({ project }) => {
+      const cardRef = useRef(null);
+
+      const handleMouseMove = (e) => {
+        const card = cardRef.current;
+        if (!card) return;
+        const rect    = card.getBoundingClientRect();
+        const x       = e.clientX - rect.left;
+        const y       = e.clientY - rect.top;
+        const rotateX = -((y - rect.height / 2) / (rect.height / 2)) * 6;
+        const rotateY =  ((x - rect.width  / 2) / (rect.width  / 2)) * 8;
+        gsap.to(card, { rotateX, rotateY, duration: 0.3, ease: "power2.out", transformPerspective: 900 });
+      };
+
+      const handleMouseLeave = () => {
+        const card = cardRef.current;
+        if (!card) return;
+        gsap.to(card, { rotateX: 0, rotateY: 0, duration: 0.6, ease: "elastic.out(1, 0.6)" });
+      };
+
+      const cardStyle = {
+        background: `linear-gradient(135deg, ${project.color} 0%, #0d0d0d 100%)`,
+        position: "relative",
+      };
+
+      const glowStyle = {
+        position: "absolute",
+        width: "200px", height: "200px",
+        background: `radial-gradient(circle, ${project.glow} 0%, transparent 70%)`,
+        top: "50%", left: "50%",
+        transform: "translate(-50%, -50%)",
+        borderRadius: "50%",
+        pointerEvents: "none",
+      };
+
+      return (
+        <article
+          className="project-card"
+          ref={cardRef}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className="project-card-inner">
+            <div className="project-card-img-wrap">
+              <div className="project-card-img" style={cardStyle}>
+                <span style={{
+                  position:"absolute", inset:0, display:"flex", alignItems:"center",
+                  justifyContent:"center", fontFamily:"'Bebas Neue',sans-serif",
+                  fontSize:"clamp(28px,4vw,56px)", color:`${project.glow}`, letterSpacing:"0.1em",
+                }}>
+                  {project.label}
+                </span>
+                <div style={glowStyle} />
+              </div>
+              <div className="project-card-overlay">
+                <a href={project.link} target="_blank" className="project-link-btn" rel="noreferrer" aria-label="View project">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className="project-card-info">
+              <span className="project-num">{project.id}</span>
+              <div>
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-desc">{project.desc}</p>
+                <div className="project-tags">
+                  {project.tags.map(t => <span key={t}>{t}</span>)}
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    };
+
+    // ─────────────────────────────────────────────
+    // WORK
+    // ─────────────────────────────────────────────
+    const Work = () => {
+      const ref = useRef(null);
+      useEffect(() => {
+        const ctx = gsap.context(() => {
+          gsap.from(".section-label", { opacity:0, x:-20, duration:0.8, ease:"power3.out",
+            scrollTrigger:{ trigger:".work-section", start:"top 88%" } });
+          gsap.from(".project-card",  { opacity:0, y:50, duration:0.9, stagger:0.15, ease:"power3.out",
+            scrollTrigger:{ trigger:".projects-grid", start:"top 80%" } });
+          gsap.from(".section-h2 .reveal-text", { opacity:0, y:60, duration:1, stagger:0.1, ease:"expo.out",
+            scrollTrigger:{ trigger:".section-h2", start:"top 85%" } });
+        }, ref);
+        return () => ctx.revert();
+      }, []);
+
+      return (
+        <section className="section work-section" id="work" ref={ref}>
+          <div className="section-label">
+            <span className="section-number">01</span>
+            <span>Selected Work</span>
+          </div>
+          <div className="section-header">
+            <h2 className="section-h2">
+              <span className="reveal-text">Projects</span>
+              <span className="reveal-text italic">that ship.</span>
+            </h2>
+          </div>
+          <div className="projects-grid">
+            {PROJECTS.map(p => <ProjectCard key={p.id} project={p} />)}
+          </div>
+        </section>
+      );
+    };
+
+    // ─────────────────────────────────────────────
+    // ABOUT
+    // ─────────────────────────────────────────────
+    const About = () => {
+      const ref = useRef(null);
+
+      useEffect(() => {
+        const ctx = gsap.context(() => {
+          gsap.from(".about-section .reveal-text", { opacity:0, y:60, duration:1, stagger:0.12, ease:"expo.out",
+            scrollTrigger:{ trigger:".about-section .section-h2", start:"top 85%" } });
+          gsap.from(".about-portrait-wrap", { opacity:0, x:40, duration:1, ease:"power3.out",
+            scrollTrigger:{ trigger:".about-portrait-wrap", start:"top 85%" } });
+          gsap.from(".about-bio p", { opacity:0, y:20, duration:0.7, stagger:0.15, ease:"power3.out",
+            scrollTrigger:{ trigger:".about-bio", start:"top 85%" } });
+          gsap.from(".stat", { opacity:0, y:20, duration:0.6, stagger:0.1, ease:"power3.out",
+            scrollTrigger:{ trigger:".about-stats", start:"top 88%" } });
+
+          // Counters
+          document.querySelectorAll(".counter").forEach(el => {
+            const target = parseInt(el.dataset.target, 10);
+            const obj = { val: 0 };
+            ScrollTrigger.create({
+              trigger: el, start: "top 85%", once: true,
+              onEnter: () => gsap.to(obj, {
+                val: target, duration: 1.8, ease: "power2.out",
+                onUpdate: () => { el.textContent = Math.round(obj.val); },
+              }),
+            });
+          });
+        }, ref);
+        return () => ctx.revert();
+      }, []);
+
+      return (
+        <section className="section about-section" id="about" ref={ref}>
+          <div className="section-label">
+            <span className="section-number">02</span>
+            <span>About Me</span>
+          </div>
+          <div className="about-grid">
+            <div className="about-left">
+              <h2 className="section-h2">
+                <span className="reveal-text">Solving hard</span>
+                <span className="reveal-text italic">problems with</span>
+                <span className="reveal-text">elegant code.</span>
+              </h2>
+            </div>
+            <div className="about-right">
+              <div className="about-portrait-wrap">
+                <img src="portrait.png" alt="Ansh Gupta" className="about-portrait" />
+                <div className="about-portrait-badge">
+                  <span className="badge-line">Based in</span>
+                  <span className="badge-val">India 🇮🇳</span>
+                </div>
+              </div>
+              <div className="about-bio">
+                <p>I'm <strong>Ansh Gupta</strong>, a full-stack developer with a passion for building products that sit at the intersection of technology and human experience.</p>
+                <p>From AI-powered healthcare platforms to real-time collaborative tools, I turn complex problems into clean, scalable, and beautiful solutions.</p>
+                <p>Currently open to <strong>freelance</strong> and <strong>full-time opportunities</strong> — let's build something remarkable together.</p>
+              </div>
+              <div className="about-stats">
+                {[["4","Projects shipped"],["2","Years building"],["12","Technologies"]].map(([n,l]) => (
+                  <div className="stat" key={l}>
+                    <span className="stat-num counter" data-target={n}>0</span>
+                    <span className="stat-label">{l}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    };
+
+    // ─────────────────────────────────────────────
+    // SKILLS
+    // ─────────────────────────────────────────────
+    const Skills = () => {
+      const ref = useRef(null);
+      useEffect(() => {
+        const ctx = gsap.context(() => {
+          gsap.from(".skill-block", { opacity:0, y:30, duration:0.7, stagger:0.1, ease:"power3.out",
+            scrollTrigger:{ trigger:".skills-grid", start:"top 82%" } });
+        }, ref);
+        return () => ctx.revert();
+      }, []);
+      return (
+        <section className="skills-section" ref={ref}>
+          <div className="skills-grid">
+            {SKILLS.map(s => (
+              <div className="skill-block" key={s.title}>
+                <div className="skill-icon">{s.icon}</div>
+                <h4>{s.title}</h4>
+                <p>{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      );
+    };
+
+    // ─────────────────────────────────────────────
+    // CONTACT
+    // ─────────────────────────────────────────────
+    const Contact = () => {
+      const ref = useRef(null);
+      useEffect(() => {
+        const ctx = gsap.context(() => {
+          gsap.from(".contact-section .reveal-text", { opacity:0, y:60, duration:1, stagger:0.1, ease:"expo.out",
+            scrollTrigger:{ trigger:".contact-h2", start:"top 85%" } });
+          gsap.from(".contact-email-link", { opacity:0, y:20, duration:0.9, ease:"expo.out",
+            scrollTrigger:{ trigger:".contact-email-link", start:"top 88%" } });
+          gsap.from(".social-link", { opacity:0, x:-20, duration:0.6, stagger:0.1, ease:"power3.out",
+            scrollTrigger:{ trigger:".contact-socials", start:"top 88%" } });
+        }, ref);
+        return () => ctx.revert();
+      }, []);
+      return (
+        <section className="section contact-section" id="contact" ref={ref}>
+          <div className="section-label">
+            <span className="section-number">03</span>
+            <span>Get In Touch</span>
+          </div>
+          <div className="contact-inner">
+            <h2 className="contact-h2">
+              <span className="reveal-text">Let's build</span>
+              <span className="reveal-text italic">something</span>
+              <span className="reveal-text">great.</span>
+            </h2>
+            <div className="contact-body">
+              <p className="contact-desc">
+                Whether you have a project in mind, a role to fill, or just want to say hello — my inbox is always open.
+              </p>
+              <a href="mailto:anshgupta3117@gmail.com" className="contact-email-link" data-magnetic>
+                anshgupta3117@gmail.com
+                <span className="email-underline" />
+              </a>
+              <div className="contact-socials">
+                {SOCIALS.map(s => (
+                  <a key={s.label} href={s.href} target="_blank" className="social-link" data-magnetic rel="noreferrer">
+                    <span>{s.label}</span>
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    };
+
+    // ─────────────────────────────────────────────
+    // FOOTER
+    // ─────────────────────────────────────────────
+    const Footer = () => (
+      <footer className="footer">
+        <div className="footer-left"><span>© 2025 Ansh Gupta</span></div>
+        <div className="footer-center"><span className="footer-logo">AG</span></div>
+        <div className="footer-right"><span>Designed &amp; Built from scratch</span></div>
+      </footer>
+    );
+
+    // ─────────────────────────────────────────────
+    // ROOT APP
+    // ─────────────────────────────────────────────
+    const App = () => {
+      useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        // Magnetic buttons
+        document.querySelectorAll("[data-magnetic]").forEach(el => {
+          el.addEventListener("mousemove", (e) => {
+            const rect = el.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width  / 2;
+            const y = e.clientY - rect.top  - rect.height / 2;
+            gsap.to(el, { x: x * 0.25, y: y * 0.25, duration: 0.4, ease: "power2.out" });
+          });
+          el.addEventListener("mouseleave", () => {
+            gsap.to(el, { x: 0, y: 0, duration: 0.6, ease: "elastic.out(1, 0.5)" });
+          });
+        });
+      }, []);
+
+      return (
+        <>
+          <div className="grain" />
+          <Cursor />
+          <Nav />
+          <Hero />
+          <MarqueeStrip />
+          <Work />
+          <About />
+          <Skills />
+          <Contact />
+          <Footer />
+        </>
+      );
+    };
+
+    // Mount
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
 </body>
 </html>
