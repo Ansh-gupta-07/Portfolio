@@ -726,6 +726,7 @@
       const ref = useRef(null);
       const [form, setForm] = useState({ name: "", email: "", message: "" });
       const [status, setStatus] = useState("idle"); // idle | sending | success | error
+      const [validationError, setValidationError] = useState("");
 
       useEffect(() => {
         const ctx = gsap.context(() => {
@@ -741,10 +742,24 @@
 
       const handleChange = (e) => {
         setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
+        if (validationError) setValidationError("");
       };
 
       const handleSubmit = async (e) => {
         e.preventDefault();
+        
+        // Frontend validation
+        if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+          setValidationError("Please fill out all fields.");
+          return;
+        }
+        
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(form.email)) {
+          setValidationError("Please enter a valid email address.");
+          return;
+        }
+
         setStatus("sending");
         try {
           // Using FormSubmit.co for serverless email forwarding
@@ -758,11 +773,17 @@
               _subject: "New message from Portfolio!"
             }),
           });
-          if (res.ok) {
+          
+          const data = await res.json();
+
+          if (res.ok && data.success !== "false" && data.success !== false) {
             setStatus("success");
             setForm({ name: "", email: "", message: "" });
           } else {
             setStatus("error");
+            if (data.message) {
+              setValidationError(data.message); // Show FormSubmit's specific error
+            }
           }
         } catch {
           setStatus("error");
@@ -834,6 +855,11 @@
                     )}
                   </button>
 
+                  {validationError && (
+                    <div className="cf-feedback cf-error">
+                      ⚠ {validationError}
+                    </div>
+                  )}
                   {status === "success" && (
                     <div className="cf-feedback cf-success">
                       ✓ Message sent! I'll reply soon.
